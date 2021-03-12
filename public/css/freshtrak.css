@@ -1,0 +1,33 @@
+.navbar {
+	background-color: #1cc177 !important;
+	background-image: none;
+	margin-bottom: 0px;
+	border-color: #1cc177;
+}
+
+.nav-link {
+	color: #FFFFFF !important;
+}
+
+.navbar-brand {
+	color: #FFFFFF !important;
+}
+
+.card {
+	border-color: #1cc177;
+}
+
+.card-header {
+	/*background-image: url(https://s3.us-east-2.amazonaws.com/www.pantrytrak.com/FreshTrak-background-banner.png);*/
+	background-color: #28ce85;
+	border-color: #28ce85;
+	color: #FFFFFF;
+}
+
+table thead tr th {
+	font-weight:bold;
+}
+
+a .card-header:hover {
+	text-decoration: none;
+}

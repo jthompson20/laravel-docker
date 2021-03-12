@@ -1,0 +1,33 @@
+version: "3.7"
+services:
+  app:
+    build:
+      args:
+        user: freshtrak
+        uid: 1000
+      context: ./
+      dockerfile: Dockerfile
+    image: freshtrak-focus-image
+    container_name: freshtrak-focus-container
+    restart: unless-stopped
+    working_dir: /var/www/
+    volumes:
+      - ./:/var/www
+    networks:
+      - freshtrak
+
+  nginx:
+    image: nginx:alpine
+    container_name: freshtrak-focus-nginx
+    restart: unless-stopped
+    ports:
+      - 8000:80
+    volumes:
+      - ./:/var/www
+      - ./docker/nginx:/etc/nginx/conf.d/
+    networks:
+      - freshtrak
+
+networks:
+  freshtrak:
+    driver: bridge

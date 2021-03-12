@@ -1,0 +1,9 @@
+{
+	"short_name": "FreshTrak: Focus",
+	"name": "FreshTrak: Focus",
+	"start_url": "/login",
+	"background_color": "#ffffff",
+	"display": "standalone",
+	"scope": "/",
+	"theme_color": "#28ce85"
+ }

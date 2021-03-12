@@ -1,0 +1,35 @@
+/* custom styles for datatables buttons */
+
+/* add padding between buttons and # of entries dropdown */
+.dt-buttons button:first-child {
+
+	margin-left:20px;
+
+}
+
+/* dress up buttons to match style/branding */
+.dt-buttons button {
+
+	display: inline;
+	color: #FFF;
+	font-weight: bold;
+	background-color: #28ce85;
+	border: 1px solid #28ce85;
+
+}
+
+.dt-buttons button:hover {
+
+	color: #000;
+	border: 1px solid #EEE;
+
+}
+
+/* hide export options on mobile */
+@media only screen and (max-width:770px) {
+
+	.dt-buttons {
+		display:none;
+	}
+
+}
